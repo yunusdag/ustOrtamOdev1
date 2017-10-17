@@ -1,0 +1,66 @@
+h1 {
+	text-align: center;
+}
+
+section {
+	border-style: solid;
+	border-color: black;
+	padding: 4px;
+	float: left;
+	margin: 5px;
+	background-color: gray;
+	color: black;
+}
+
+.category {
+    width: 20%;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    top: -7px;
+    left: 79.5%;
+}
+
+.kebab {
+	background-color: red;
+}
+
+.beef {
+	background-color: blue;
+}
+
+.chicken {
+	background-color: orange;
+}
+
+/*large devices*/
+@media (min-width: 992px) {
+	section {
+		width: 30%;	
+	}
+}
+
+/*medium devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+	section {
+		width: 45%;
+	}
+
+	section:last-of-type {
+		width: 92.5%;
+	}
+
+	section:last-of-type > .category {
+		left: 79.8%;
+	}
+}
+
+/*small devices*/
+@media (max-width: 767px) {
+	section {
+		width: 95%;		
+	}
+}
